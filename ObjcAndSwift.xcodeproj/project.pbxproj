@@ -12,6 +12,7 @@
 		B314011E20F2F05A005A1A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B314011C20F2F05A005A1A48 /* Main.storyboard */; };
 		B314012020F2F05B005A1A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B314011F20F2F05B005A1A48 /* Assets.xcassets */; };
 		B314012320F2F05B005A1A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B314012120F2F05B005A1A48 /* LaunchScreen.storyboard */; };
+		B314013220F2F371005A1A48 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B314013120F2F371005A1A48 /* CustomObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		B314011F20F2F05B005A1A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B314012220F2F05B005A1A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B314012420F2F05B005A1A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B314012A20F2F109005A1A48 /* ObjcAndSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjcAndSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B314013120F2F371005A1A48 /* CustomObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		B314013320F2F397005A1A48 /* CustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,9 @@
 				B314011F20F2F05B005A1A48 /* Assets.xcassets */,
 				B314012120F2F05B005A1A48 /* LaunchScreen.storyboard */,
 				B314012420F2F05B005A1A48 /* Info.plist */,
+				B314012A20F2F109005A1A48 /* ObjcAndSwift-Bridging-Header.h */,
+				B314013120F2F371005A1A48 /* CustomObject.m */,
+				B314013320F2F397005A1A48 /* CustomObject.h */,
 			);
 			path = ObjcAndSwift;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					B314011420F2F05A005A1A48 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -137,6 +145,7 @@
 			files = (
 				B314011B20F2F05A005A1A48 /* ViewController.swift in Sources */,
 				B314011920F2F05A005A1A48 /* AppDelegate.swift in Sources */,
+				B314013220F2F371005A1A48 /* CustomObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E9XW5U7WR;
 				INFOPLIST_FILE = ObjcAndSwift/Info.plist;
@@ -289,6 +299,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cap.ObjcAndSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cap1/Desktop/Apps/ObjcAndSwift/ObjcAndSwift/ObjcAndSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E9XW5U7WR;
 				INFOPLIST_FILE = ObjcAndSwift/Info.plist;
@@ -307,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cap.ObjcAndSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cap1/Desktop/Apps/ObjcAndSwift/ObjcAndSwift/ObjcAndSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
